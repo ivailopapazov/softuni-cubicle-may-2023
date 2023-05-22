@@ -9,11 +9,8 @@
     </form>
 
     {{#each cubes}}
-    <div class="cube">
-        <img class="cube" src="{{imageUrl}}">
-        <p class="name">{{name}}</p>
-        <p><span>Difficulty level:</span> {{difficultyLevel}}</p>
-        <a class="btn" href="/details/5c39f1851ab3b24f5c03e182">Details</a>
-    </div>
+        {{>cube}}
+    {{else}}
+    <p>There are no cubes yet!</p>
     {{/each}}
 </main>
