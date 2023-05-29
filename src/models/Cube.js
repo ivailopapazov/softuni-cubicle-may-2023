@@ -1,4 +1,4 @@
-const mongoose = require('mognoose');
+const mongoose = require('mongoose');
 
 const cubeSchema = new mongoose.Schema({
     name: String,
@@ -8,3 +8,5 @@ const cubeSchema = new mongoose.Schema({
 });
 
 const Cube = mongoose.model('Cube', cubeSchema);
+
+module.exports = Cube;
